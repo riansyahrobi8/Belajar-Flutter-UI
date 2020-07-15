@@ -10,14 +10,18 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Flutter UI"),
-        leading: Icon(Icons.menu),
-      ),
-      body: Text(
-        "Hallo nama saya $nama",
-        textAlign: TextAlign.center,
-      ),
-    );
+        appBar: AppBar(
+          title: Text("Flutter UI"),
+          leading: Icon(Icons.menu),
+        ),
+        body: Text.rich(
+            TextSpan(text: "Hallo nama saya $nama", children: <TextSpan>[
+          TextSpan(
+              text: "Saya seorang flutter developer",
+              style: TextStyle(color: Colors.blue, fontSize: 22.0)),
+          TextSpan(
+              text: "Saya suka coklat",
+              style: TextStyle(fontWeight: FontWeight.bold))
+        ])));
   }
 }
