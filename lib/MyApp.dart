@@ -1,4 +1,5 @@
 import 'package:belajar_ui_flutter/screens/Home.dart';
+import 'package:belajar_ui_flutter/screens/Layouting.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -7,7 +8,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Belajar Flutter UI',
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: Layouting(),
     );
   }
 }
