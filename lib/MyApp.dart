@@ -4,6 +4,7 @@ import 'package:belajar_ui_flutter/screens/FavoriteWidget.dart';
 import 'package:belajar_ui_flutter/screens/Home.dart';
 import 'package:belajar_ui_flutter/screens/ImageFittedBox.dart';
 import 'package:belajar_ui_flutter/screens/Layouting2.dart';
+import 'package:belajar_ui_flutter/screens/ThirdLayouting.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Flutter layout demo"),
         ),
-        body: ContainerAspectRatio(),
+        body: ThirdLayouting(),
       ),
     );
   }
