@@ -1,3 +1,4 @@
+import 'package:belajar_ui_flutter/screens/ButtonFactionallySizeBox.dart';
 import 'package:belajar_ui_flutter/screens/FavoriteWidget.dart';
 import 'package:belajar_ui_flutter/screens/Home.dart';
 import 'package:belajar_ui_flutter/screens/Layouting2.dart';
@@ -10,10 +11,10 @@ class MyApp extends StatelessWidget {
       title: 'Belajar Flutter UI',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        // appBar: AppBar(
-        //   title: Text("Flutter layout demo"),
-        // ),
-        body: SecondLayouting(),
+        appBar: AppBar(
+          title: Text("Flutter layout demo"),
+        ),
+        body: ButtonFactionallySizeBox(),
       ),
     );
   }
