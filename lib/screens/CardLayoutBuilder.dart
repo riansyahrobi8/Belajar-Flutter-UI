@@ -3,14 +3,9 @@ import 'package:flutter/material.dart';
 class CardLayoutBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(builder: (context, constraint) {
-      print(constraint.maxHeight);
-      if (constraint.maxHeight < 600) {
-        return LayoutPortarit();
-      } else {
-        return LayoutLandscap();
-      }
-    });
+    return MediaQuery.of(context).orientation == Orientation.portrait
+        ? LayoutPortarit()
+        : LayoutLandscap();
   }
 }
 
