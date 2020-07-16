@@ -1,5 +1,6 @@
 import 'package:belajar_ui_flutter/screens/FavoriteWidget.dart';
 import 'package:belajar_ui_flutter/screens/Home.dart';
+import 'package:belajar_ui_flutter/screens/Layouting2.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -9,10 +10,10 @@ class MyApp extends StatelessWidget {
       title: 'Belajar Flutter UI',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Flutter layout demo"),
-        ),
-        body: FavoriteWidget(),
+        // appBar: AppBar(
+        //   title: Text("Flutter layout demo"),
+        // ),
+        body: SecondLayouting(),
       ),
     );
   }
