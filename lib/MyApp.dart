@@ -1,4 +1,5 @@
 import 'package:belajar_ui_flutter/screens/ButtonFactionallySizeBox.dart';
+import 'package:belajar_ui_flutter/screens/CardLayoutBuilder.dart';
 import 'package:belajar_ui_flutter/screens/ContainerAspectRatio.dart';
 import 'package:belajar_ui_flutter/screens/FavoriteWidget.dart';
 import 'package:belajar_ui_flutter/screens/Home.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Flutter layout demo"),
         ),
-        body: ThirdLayouting(),
+        body: CardLayoutBuilder(),
       ),
     );
   }
