@@ -1,3 +1,4 @@
+import 'package:belajar_ui_flutter/screens/FavoriteWidget.dart';
 import 'package:flutter/material.dart';
 
 class SecondLayouting extends StatelessWidget {
@@ -17,17 +18,14 @@ class SecondLayouting extends StatelessWidget {
     );
 
     return Scaffold(
-        appBar: AppBar(
-          title: Text("Flutter layout demo 2"),
-        ),
         body: ListView(
-          children: <Widget>[
-            imageSection,
-            titleSection,
-            buttonSection,
-            textSection
-          ],
-        ));
+      children: <Widget>[
+        imageSection,
+        titleSection,
+        buttonSection,
+        textSection
+      ],
+    ));
   }
 
   Widget imageSection = Image.asset(
@@ -71,11 +69,7 @@ class SecondLayouting extends StatelessWidget {
             )
           ],
         )),
-        Icon(
-          Icons.star,
-          color: Colors.red[500],
-        ),
-        Text('4')
+        FavoriteWidget(),
       ],
     ),
   );
