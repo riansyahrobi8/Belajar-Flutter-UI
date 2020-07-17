@@ -18,7 +18,7 @@ class _ParentWidgetState extends State<ParentWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: TapboxB(
+      child: TapboxC(
         active: _active,
         onChanged: _handleTapboxChanged,
       ),
