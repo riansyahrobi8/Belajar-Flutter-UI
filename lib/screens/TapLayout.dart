@@ -112,20 +112,30 @@ class _TapboxCState extends State<TapboxC> {
       onTapUp: _handleTapUp,
       onTap: _handleTap,
       onTapCancel: _handleTapCancel,
-      child: Container(
-        width: 200.0,
-        height: 200.0,
-        decoration: BoxDecoration(
-            color: widget.active ? Colors.lightGreen[700] : Colors.grey[600],
-            border: _highlight
-                ? Border.all(color: Colors.teal[700], width: 20.0)
-                : null),
-        child: Center(
-          child: Text(
-            widget.active ? 'Active' : 'Inactive',
-            style: TextStyle(fontSize: 32.0, color: Colors.white),
+      child: Column(
+        children: <Widget>[
+          Container(
+            width: 200.0,
+            height: 200.0,
+            decoration: BoxDecoration(
+                color:
+                    widget.active ? Colors.lightGreen[700] : Colors.grey[600],
+                border: _highlight
+                    ? Border.all(color: Colors.teal[700], width: 20.0)
+                    : null),
+            child: Center(
+              child: Text(
+                widget.active ? 'Active' : 'Inactive',
+                style: TextStyle(fontSize: 32.0, color: Colors.white),
+              ),
+            ),
           ),
-        ),
+          Container(
+              width: 200.0,
+              height: 200.0,
+              color: Colors.amber,
+              child: Center(child: Icon(Icons.add)))
+        ],
       ),
     );
   }
