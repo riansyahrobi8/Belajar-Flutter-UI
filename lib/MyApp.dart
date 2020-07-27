@@ -6,6 +6,7 @@ import 'package:belajar_ui_flutter/screens/Home.dart';
 import 'package:belajar_ui_flutter/screens/ImageFittedBox.dart';
 import 'package:belajar_ui_flutter/screens/Layouting2.dart';
 import 'package:belajar_ui_flutter/screens/ParentWidget.dart';
+import 'package:belajar_ui_flutter/screens/SplashScreen.dart';
 import 'package:belajar_ui_flutter/screens/TapLayout.dart';
 import 'package:belajar_ui_flutter/screens/ThirdLayouting.dart';
 import 'package:flutter/material.dart';
@@ -17,11 +18,14 @@ class MyApp extends StatelessWidget {
       title: 'Belajar Flutter UI',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Flutter layout demo"),
-        ),
-        body: ParentWidget(),
+        // appBar: AppBar(
+        //   title: Text("Flutter layout demo"),
+        // ),
+        body: SplashScreen(),
       ),
+      routes: <String, WidgetBuilder>{
+        '/home': (BuildContext context) => Home()
+      },
     );
   }
 }
