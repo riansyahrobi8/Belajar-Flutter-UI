@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:belajar_ui_flutter/animation/FadeAnimation.dart';
+import 'package:belajar_ui_flutter/routing/const_routing.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -19,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen>
   }
 
   void navigatorHome() {
-    Navigator.of(context).pushReplacementNamed("/onboarding");
+    Navigator.of(context).pushReplacementNamed(onBoardingRoute);
   }
 
   @override
