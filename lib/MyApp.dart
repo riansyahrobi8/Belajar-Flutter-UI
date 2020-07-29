@@ -1,14 +1,5 @@
-import 'package:belajar_ui_flutter/screens/ButtonFactionallySizeBox.dart';
-import 'package:belajar_ui_flutter/screens/CardLayoutBuilder.dart';
-import 'package:belajar_ui_flutter/screens/ContainerAspectRatio.dart';
-import 'package:belajar_ui_flutter/screens/FavoriteWidget.dart';
-import 'package:belajar_ui_flutter/screens/Home.dart';
-import 'package:belajar_ui_flutter/screens/ImageFittedBox.dart';
-import 'package:belajar_ui_flutter/screens/Layouting2.dart';
-import 'package:belajar_ui_flutter/screens/ParentWidget.dart';
 import 'package:belajar_ui_flutter/screens/SplashScreen.dart';
-import 'package:belajar_ui_flutter/screens/TapLayout.dart';
-import 'package:belajar_ui_flutter/screens/ThirdLayouting.dart';
+import 'package:belajar_ui_flutter/screens/OnBoarding.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -24,7 +15,7 @@ class MyApp extends StatelessWidget {
         body: SplashScreen(),
       ),
       routes: <String, WidgetBuilder>{
-        '/home': (BuildContext context) => Home()
+        '/onboarding': (BuildContext context) => OnBoarding()
       },
     );
   }
