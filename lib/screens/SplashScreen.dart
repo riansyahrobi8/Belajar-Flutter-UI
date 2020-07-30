@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen>
   }
 
   void navigatorHome() {
-    Navigator.of(context).pushReplacementNamed(onBoardingRoute);
+    Navigator.of(context).pushReplacementNamed(onBoardingRoute2);
   }
 
   @override
