@@ -93,17 +93,27 @@ class _OnBOarding2State extends State<OnBOarding2> {
   }
 
   Widget _displayText(String desc) {
-    return Text(
-      desc,
-      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
-      textAlign: TextAlign.center,
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 16.0),
+      padding: EdgeInsets.symmetric(horizontal: 16.0),
+      child: Text(
+        desc,
+        style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 16.0,
+            color: Colors.grey[600]),
+        textAlign: TextAlign.center,
+      ),
     );
   }
 
   Widget _displayImage(int path) {
-    return Image.asset(
-      "images/onboarding/$path.png",
-      height: MediaQuery.of(context).size.height * 0.5,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+      child: Image.asset(
+        "images/onboarding/$path.png",
+        height: MediaQuery.of(context).size.height * 0.5,
+      ),
     );
   }
 

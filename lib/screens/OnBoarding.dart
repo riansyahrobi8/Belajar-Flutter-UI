@@ -35,23 +35,26 @@ class _OnBoardingState extends State<OnBoarding> {
             },
             children: <Widget>[
               SliderTile(
-                imagePath: 'images/undraw_contract_uy56.png',
-                title: 'text',
-                desc: 'text',
+                imagePath: 'images/onboarding/1.png',
+                title: 'Daftar',
+                desc:
+                    "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
               ),
               SliderTile(
-                imagePath: 'images/undraw_contract_uy56.png',
-                title: 'text',
-                desc: 'text',
+                imagePath: 'images/onboarding/2.png',
+                title: 'Pesan',
+                desc:
+                    "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
               ),
               SliderTile(
-                imagePath: 'images/undraw_contract_uy56.png',
-                title: 'text',
-                desc: 'text',
+                imagePath: 'images/onboarding/3.png',
+                title: 'Bayar',
+                desc:
+                    "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
               )
             ],
           )),
-      bottomSheet: slideIndex != 2
+      bottomSheet: slideIndex != 3
           ? Container(
               margin: EdgeInsets.symmetric(vertical: 16.0),
               child: Row(

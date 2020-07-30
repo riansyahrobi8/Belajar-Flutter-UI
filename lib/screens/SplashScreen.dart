@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:belajar_ui_flutter/animation/FadeAnimation.dart';
 import 'package:belajar_ui_flutter/routing/const_routing.dart';
 import 'package:flutter/material.dart';
 
